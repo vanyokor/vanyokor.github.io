@@ -1,0 +1,43 @@
+p {
+	color: #f00;
+}
+
+ul ul li {
+	color: #f00;
+}
+
+ul > li {
+	color: #00f;
+}
+
+table {
+	border-color: #f00;
+	border-radius: 8px;
+	border-width: 2px;
+	color: #cc1818;
+}
+
+table th {
+	padding: 2em 0;
+}
+
+input{
+	font-family: monospace;
+	font-size: 12px;
+}
+
+#first{
+	color: #f00;
+}
+
+#second{
+	color: #888;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
