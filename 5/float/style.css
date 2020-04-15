@@ -49,7 +49,7 @@ h1 {
 .pattern {
     width: 196px;
     height: 578px;
-    background-image: url(../img/patern.png);
+    background-image: url(../../img/patern.png);
     top: -240px;
     right: 0;
 }
@@ -57,7 +57,7 @@ h1 {
 .berry-1 {
     width: 135px;
     height: 112px;
-    background-image: url(../img/berry1.png);
+    background-image: url(../../img/berry1.png);
     top: -65px;
     right: 13px;
 }
@@ -65,7 +65,7 @@ h1 {
 .berry-2 {
     width: 104px;
     height: 114px;
-    background-image: url(../img/berry2.png);
+    background-image: url(../../img/berry2.png);
     left: 35px;
     bottom: -45px;
 }
