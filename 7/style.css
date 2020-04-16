@@ -1,0 +1,200 @@
+body,
+html {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.header .header__text {
+    text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 2em;
+    padding-bottom: 1.3em;
+}
+
+.header .header__subtext {
+    text-align: center;
+}
+
+.wrap {
+    width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0.1px 0;
+    position: relative;
+}
+
+/* 
+ *  Шапка 
+ */
+#header {
+    background-color: #61c4d9;
+}
+
+#header .header {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu .menu__item {
+    margin: 0 1em;
+}
+
+.differences {
+    display: flex;
+    list-style: none;
+}
+
+.differences .differences__item {
+    margin: 0 1em;
+}
+
+/* 
+ *  Почему 
+ */
+.advantage-list {
+    display: flex;
+}
+
+.advantage-list .advantage-list__item {
+    text-align: center;
+}
+
+/* 
+ *  Слайдер 
+ */
+#slider {
+    background-color: #f8faf9;
+}
+
+.slides {
+    list-style: none;
+}
+
+.slides .slides__item {
+    display: flex;
+}
+
+.slides .slides__params {
+    display: flex;
+    list-style: none;
+}
+
+/* 
+ *  Команда 
+ */
+#team .wrap {
+    position: relative;
+    min-height: 766px;
+}
+
+.teamlist {
+    display: flex;
+    justify-content: center;
+}
+
+.teamlist .teamlist__member {
+    margin-right: 1em;
+}
+
+.teamlist .teamlist__member:nth-child(2) {
+    padding-top: 4em;
+}
+
+.teamlist .teamlist__member:last-child {
+    padding-top: 3em;
+    margin-right: 0;
+}
+
+.teamlist .teamlist__member .teamlist__name {
+    font-size: 21px;
+    text-align: center;
+    font-weight: bold;
+    color: #323232;
+}
+
+.arrow {
+    position: relative;
+    font-size: 0;
+}
+
+.arrow::before {
+    content: "";
+    position: absolute;
+    border: 4px solid transparent;
+    border-top: 6px solid #323232;
+    top: -8px;
+    left: 5px;
+}
+
+.teamlist__member_with-profession .arrow::before {
+    border: 4px solid transparent;
+    border-bottom: 6px solid #323232;
+    top: -13px;
+}
+
+.teamlist .teamlist__member_with-profession .teamlist__name {
+    margin-bottom: 0;
+}
+
+.teamlist .teamlist__member_with-profession .teamlist__profession,
+.teamlist .teamlist__member_with-profession .teamlist__description {
+    font-size: 18px;
+    margin: .2em 0;
+    text-align: center;
+}
+
+.teamlist .teamlist__member_with-profession .teamlist__profession {
+    color: #281e1e;
+}
+
+.teamlist .teamlist__member_with-profession .teamlist__description {
+    color: #666666;
+}
+
+/*
+ *   Подвал
+ */
+#bottom {
+    background-color: #3a3d3f;
+}
+
+#bottom .wrap {
+    min-height: 80px;
+}
+
+/* 
+ *   Декорации
+ */
+
+.decoration {
+    position: absolute;
+}
+
+.decoration.decoration_pattern {
+    width: 196px;
+    height: 578px;
+    background-image: url(../../img/patern.png);
+    top: -240px;
+    right: 0;
+}
+
+.decoration.decoration_berry-1 {
+    width: 135px;
+    height: 112px;
+    background-image: url(../../img/berry1.png);
+    top: -65px;
+    right: 13px;
+}
+
+.decoration.decoration_berry-2 {
+    width: 104px;
+    height: 114px;
+    background-image: url(../../img/berry2.png);
+    left: 35px;
+    bottom: -45px;
+}
