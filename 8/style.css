@@ -212,13 +212,6 @@ html {
     border: 0;
 }
 
-.form .form__input:hover {
-    box-shadow: 1px 1px 6px #adadad;
-}
-
-.form .form__input:focus {
-    box-shadow: 1px 1px 12px #4e4e4e;
-}
 
 .form__label_option::before,
 .form__label_check::before {
@@ -229,11 +222,6 @@ html {
     height: 25px;
     top: -3px;
     left: -35px;
-}
-
-.form__label_option:hover::before,
-.form__label_check:hover::before {
-    box-shadow: 1px 1px 6px #adadad;
 }
 
 .form__radio {
@@ -298,27 +286,15 @@ html {
     cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #eee;
-}
-
 .btn_black {
     background: #0f5a47;
     color: #fff;
-}
-
-.btn_black:hover {
-    background-color: #0c4234;
 }
 
 .btn_transp {
     background: rgba(0, 0, 0, 0);
     color: #0f5a47;
     box-shadow: unset;
-}
-
-.btn_transp:hover {
-    background-color: rgba(0, 0, 0, 0);
 }
 
 /* 
