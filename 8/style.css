@@ -12,6 +12,10 @@ html {
     padding-bottom: 1.3em;
 }
 
+.header .header__text.header__text_gray {
+    color: #0f5a47;
+}
+
 .header .header__subtext {
     text-align: center;
 }
@@ -157,6 +161,115 @@ html {
 }
 
 /*
+ *   Форма заказа
+ */
+#order-form {
+    background-color: #cfdeda;
+}
+
+#order-form .wrap {
+    position: relative;
+    min-height: 737px;
+    background-image: url(/img/form_back.jpg);
+}
+
+.form {
+    display: flex;
+}
+
+.form .form__column {
+    flex: 1;
+}
+
+.form .form__row {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.form .form__elem {
+    flex: 1;
+    margin: 0 .5em;
+}
+
+.form .form__label {
+    display: flex;
+    flex-direction: column;
+}
+
+.form .form__label.form__label_option {
+    flex-direction: row;
+}
+
+.form .form__label-text {
+    margin-bottom: .3em;
+}
+
+.form .form__input {
+    width: 100%;
+    font-size: 18px;
+    line-height: 30.05px;
+    padding: .5em 0;
+    border: 0;
+}
+
+.form .form__input:hover {
+    box-shadow: 1px 1px 6px #adadad;
+}
+
+.form .form__input:focus {
+    box-shadow: 1px 1px 12px #4e4e4e;
+}
+
+.form__label_option::before,
+.form__label_check::before {
+    background-image: url(/img/form_sprite.png);
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: -3px;
+    left: -35px;
+}
+
+.form__label_option:hover::before,
+.form__label_check:hover::before {
+    box-shadow: 1px 1px 6px #adadad;
+}
+
+.form__radio {
+    display: none;
+}
+
+.form__radio:checked+.form__label_option::before {
+    background-position-x: -75px;
+}
+
+.form__label_option {
+    cursor: pointer;
+    position: relative;
+    margin-left: 35px;
+}
+
+.form__label_option::before {
+    background-position-x: -50px;
+    border-radius: 50%;
+}
+
+.form__check {
+    display: none;
+}
+
+.form__check:checked+.form__label_check::before {
+    background-position-x: -25px;
+}
+
+.form__label_check {
+    cursor: pointer;
+    position: relative;
+    margin-left: 35px;
+}
+
+/*
  *   Подвал
  */
 #bottom {
@@ -167,12 +280,54 @@ html {
     min-height: 80px;
 }
 
+
+/* 
+ *   Кнопки
+ */
+.btn {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1em 1.5em;
+    border: 0;
+    border-radius: 1.5em;
+    box-shadow: 0px 6px 18px #a0a0a0;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #eee;
+}
+
+.btn_black {
+    background: #0f5a47;
+    color: #fff;
+}
+
+.btn_black:hover {
+    background-color: #0c4234;
+}
+
+.btn_transp {
+    background: rgba(0, 0, 0, 0);
+    color: #0f5a47;
+    box-shadow: unset;
+}
+
+.btn_transp:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
 /* 
  *   Декорации
  */
 
 .decoration {
     position: absolute;
+    z-index: 1;
 }
 
 .decoration.decoration_pattern {
