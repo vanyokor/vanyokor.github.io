@@ -16,7 +16,7 @@ h1 {
 
 #top section, 
 #bottom section, 
-main > article {
+main > section {
     width: 1100px;
     margin: 0 auto;
     height: 100%;
@@ -40,7 +40,7 @@ main > article {
     min-height: 80px;
 }
 
-#content > article {
+#content > section {
     position: relative;
     min-height: 766px;
 }
