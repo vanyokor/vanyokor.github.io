@@ -27,9 +27,6 @@ h2 {
  */
 #header {
     background-color: #61c4d9;
-}
-
-#header header {
     display: flex;
 }
 
@@ -42,12 +39,12 @@ h2 {
     margin: 0 1em;
 }
 
-#header footer ul {
+#main-banner footer ul {
     display: flex;
     list-style: none;
 }
 
-#header footer ul li {
+#main-banner footer ul li {
     margin: 0 1em;
 }
 
@@ -85,7 +82,7 @@ main .advantageList {
 /* 
  *  Команда 
  */
-#team .wrap {
+#team.wrap {
     position: relative;
     min-height: 766px;
 }
