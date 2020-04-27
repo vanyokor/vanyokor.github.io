@@ -3,7 +3,7 @@ html {
     font-family: 'Alegreya Sans', sans-serif;
 }
 
-.header .header__text {
+.section-header__text {
     text-align: center;
     font-size: 48px;
     text-transform: uppercase;
@@ -12,12 +12,12 @@ html {
     padding-bottom: 1.3em;
 }
 
-.header .header__text.header__text_gray {
+.header__text_gray {
     color: #0f5a47;
     padding-bottom: 1em;
 }
 
-.header .header__subtext {
+.section-header__subtext {
     text-align: center;
 }
 
@@ -32,11 +32,8 @@ html {
 /* 
  *  Шапка 
  */
-#start {
+#page-top {
     background-color: #61c4d9;
-}
-
-#start .header {
     display: flex;
 }
 
@@ -45,8 +42,15 @@ html {
     list-style: none;
 }
 
-.menu .menu__item {
+.menu__item {
     margin: 0 1em;
+}
+
+/* 
+ *  первая страница 
+ */
+#main-banner{
+    background-color: #61c4d9;
 }
 
 .differences {
@@ -54,7 +58,7 @@ html {
     list-style: none;
 }
 
-.differences .differences__item {
+.differences__item {
     margin: 0 1em;
 }
 
@@ -65,7 +69,7 @@ html {
     display: flex;
 }
 
-.advantage-list .advantage-list__item {
+.advantage-list__item {
     text-align: center;
 }
 
@@ -80,11 +84,11 @@ html {
     list-style: none;
 }
 
-.slides .slides__item {
+.slides__item {
     display: flex;
 }
 
-.slides .slides__params {
+.slides__params {
     display: flex;
     list-style: none;
 }
@@ -92,7 +96,7 @@ html {
 /* 
  *  Команда 
  */
-#team .wrap {
+#team.wrap {
     position: relative;
     min-height: 766px;
 }
@@ -102,20 +106,20 @@ html {
     justify-content: center;
 }
 
-.teamlist .teamlist__member {
+.teamlist__member {
     margin-right: 1em;
 }
 
-.teamlist .teamlist__member:nth-child(2) {
+.teamlist__member:nth-child(2) {
     padding-top: 4em;
 }
 
-.teamlist .teamlist__member:last-child {
+.teamlist__member:last-child {
     padding-top: 3em;
     margin-right: 0;
 }
 
-.teamlist .teamlist__member .teamlist__name {
+.teamlist__name {
     font-size: 21px;
     text-align: center;
     font-weight: bold;
@@ -146,18 +150,18 @@ html {
     margin-bottom: 0;
 }
 
-.teamlist .teamlist__member_with-profession .teamlist__profession,
-.teamlist .teamlist__member_with-profession .teamlist__description {
+.teamlist__profession,
+.teamlist__description {
     font-size: 18px;
     margin: .2em 0;
     text-align: center;
 }
 
-.teamlist .teamlist__member_with-profession .teamlist__profession {
+.teamlist__profession {
     color: #281e1e;
 }
 
-.teamlist .teamlist__member_with-profession .teamlist__description {
+.teamlist__description {
     color: #666666;
 }
 
@@ -179,35 +183,35 @@ html {
     margin: 0 5em;
 }
 
-.form .form__column {
+.form__column {
     flex: 1;
 }
 
-.form .form__row {
+.form__row {
     display: flex;
     margin-bottom: 1.4em;
 }
 
-.form .form__elem {
+.form__elem {
     flex: 1;
     margin: 0 .5em;
 }
 
-.form .form__label {
+.form__label {
     display: flex;
     flex-direction: column;
 }
 
-.form .form__label.form__label_option {
+.form__label.form__label_option {
     flex-direction: row;
 }
 
-.form .form__label-text {
+.form__label-text {
     margin-bottom: .3em;
     font-size: 18px;
 }
 
-.form .form__input {
+.form__input {
     width: 100%;
     font-family: arial, sans-serif;
     font-size: 18px;
@@ -218,11 +222,11 @@ html {
     box-sizing: border-box;
 }
 
-.form .form__input:hover {
+.form__input:hover {
     box-shadow: 0px 0px 0px 2px #d3e280;
 }
 
-.form .form__input:focus {
+.form__input:focus {
     box-shadow: 0px 0px 0px 2px #dde3bd;
     outline: 0;
 }
@@ -274,11 +278,11 @@ html {
 /*
  *   Подвал
  */
-#bottom {
+#page-bottom {
     background-color: #3a3d3f;
 }
 
-#bottom .wrap {
+#page-bottom .wrap {
     min-height: 80px;
 }
 
@@ -334,6 +338,9 @@ html {
     background-color: rgba(0, 0, 0, 0);
     color: #041510;
 }
+.btn_transp:focus {
+    background-color: rgba(0, 0, 0, 0);
+}
 
 /* 
  *   Декорации
@@ -344,7 +351,7 @@ html {
     z-index: 1;
 }
 
-.decoration.decoration_pattern {
+.decoration_pattern {
     width: 196px;
     height: 578px;
     background-image: url(../../img/patern.png);
@@ -352,7 +359,7 @@ html {
     right: 0;
 }
 
-.decoration.decoration_berry-1 {
+.decoration_berry-1 {
     width: 135px;
     height: 112px;
     background-image: url(../../img/berry1.png);
@@ -360,7 +367,7 @@ html {
     right: 13px;
 }
 
-.decoration.decoration_berry-2 {
+.decoration_berry-2 {
     width: 104px;
     height: 114px;
     background-image: url(../../img/berry2.png);
