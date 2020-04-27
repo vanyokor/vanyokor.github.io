@@ -82,7 +82,7 @@ main .advantageList {
 /* 
  *  Команда 
  */
-#team.wrap {
+#team {
     position: relative;
     min-height: 766px;
 }
@@ -156,9 +156,6 @@ main .advantageList {
  */
 #bottom {
     background-color: #3a3d3f;
-}
-
-#bottom .wrap {
     min-height: 80px;
 }
 

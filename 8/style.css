@@ -96,7 +96,7 @@ html {
 /* 
  *  Команда 
  */
-#team.wrap {
+#team {
     position: relative;
     min-height: 766px;
 }
@@ -170,9 +170,6 @@ html {
  */
 #order-form {
     background-color: #cfdeda;
-}
-
-#order-form .wrap {
     position: relative;
     min-height: 666px;
     background-image: url(/img/form_back.jpg);
@@ -280,9 +277,6 @@ html {
  */
 #page-bottom {
     background-color: #3a3d3f;
-}
-
-#page-bottom .wrap {
     min-height: 80px;
 }
 

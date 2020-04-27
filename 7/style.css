@@ -91,7 +91,7 @@ html {
 /* 
  *  Команда 
  */
-#team.wrap {
+#team {
     position: relative;
     min-height: 766px;
 }
@@ -165,9 +165,6 @@ html {
  */
 #page-bottom {
     background-color: #3a3d3f;
-}
-
-#page-bottom .wrap {
     min-height: 80px;
 }
 
