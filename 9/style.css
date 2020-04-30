@@ -3,6 +3,24 @@ html {
     font-family: 'Alegreya Sans', sans-serif;
 }
 
+.bz-content {
+  box-sizing: content-box;
+}
+.bz-content *,
+.bz-content *::before,
+.bz-content *::after {
+  box-sizing: inherit;
+}
+
+.bz-border {
+  box-sizing: border-box;
+}
+.bz-border *,
+.bz-border *::before,
+.bz-border *::after {
+  box-sizing: inherit;
+}
+
 .section-header__text {
     text-align: center;
     font-size: 48px;
@@ -20,8 +38,16 @@ html {
     padding-bottom: 1em;
 }
 
+.section-header__text_small-padding {
+    padding-bottom: 0;
+}
+
 .section-header__subtext {
     text-align: center;
+    margin: .5em 0;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #666666;
 }
 
 .wrap {
@@ -30,6 +56,7 @@ html {
     height: 100%;
     padding: 0.1px 0;
     position: relative;
+    box-sizing: border-box;
 }
 
 /* 
@@ -38,6 +65,10 @@ html {
 #page-top {
     background-color: #61c4d9;
     display: flex;
+}
+
+.company-logo {
+    margin: .5em;
 }
 
 .menu {
@@ -49,11 +80,48 @@ html {
     margin: 0 1em;
 }
 
+.menu__link{
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu-tel {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: .5em;
+}
+
+.banner__title{
+    font-size: 42px;
+    line-height: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+}
+.banner__subtitle{
+    font-size: 21px;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.differences{
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #ffffff;
+}
 /* 
  *  первая страница 
  */
 #main-banner{
     background-color: #61c4d9;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .differences {
@@ -68,14 +136,59 @@ html {
 /* 
  *  Почему 
  */
+.main{
+    min-height: 660px;
+}
+
 .advantage-list {
     display: flex;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    justify-content: center;
 }
 
 .advantage-list__item {
     text-align: center;
+    width: 345px;
+    padding: 0 32px;
 }
 
+.advantage-list__circle {
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    background-color: #f2f5f4;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.advantage-list__title {
+    font-size: 27px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #000000;
+}
+
+.advantage-list__subtitle {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #666666;
+}
+
+.advantage-list__delimiter {
+    position: relative;
+}
+.advantage-list__delimiter:before{
+    position: absolute;
+    content: "";
+    background-image: url(/img/delimiter.png);
+    display: block;
+    width: 67px;
+    height: 21px;
+    top: 58px;
+    left: -33px;
+}
 /* 
  *  Слайдер 
  */
@@ -96,6 +209,47 @@ html {
     list-style: none;
 }
 
+.slides__article{
+    margin: 0 3em;
+}
+
+.slides__subtitle{
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #323232;
+}
+
+.slides__desc{
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #666666;
+}
+.slides__params-item{
+    margin-right: 3em;
+}
+.slides__params-prop{
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #333333;
+    margin: 0;
+}
+.slides__params-value{
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #333333;
+    margin: 0;
+}
+.price{
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #0d0d0d;
+}
 /* 
  *  Команда 
  */
@@ -113,7 +267,7 @@ html {
     margin-right: 1em;
 }
 
-.teamlist__member:nth-child(2) {
+.teamlist__member_offset {
     padding-top: 4em;
 }
 
@@ -208,7 +362,7 @@ html {
 }
 
 .form__label-text {
-    font-size: 18.1px;
+    font-size: 18px;
     line-height: 30px;
     color: #0f5a47;
 }
@@ -302,6 +456,7 @@ html {
     border-radius: 1.5em;
     box-shadow: 0px 6px 18px #a0a0a0;
     cursor: pointer;
+    display: inline-block;
 }
 
 .btn:hover {
