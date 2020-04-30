@@ -15,7 +15,7 @@ html {
     color: #0d0d0d;
 }
 
-.header__text_gray {
+.section-header__text_gray {
     color: #0f5a47;
     padding-bottom: 1em;
 }
@@ -208,8 +208,9 @@ html {
 }
 
 .form__label-text {
-    margin-bottom: .3em;
-    font-size: 18px;
+    font-size: 18.1px;
+    line-height: 30px;
+    color: #0f5a47;
 }
 
 .form__input {
@@ -262,6 +263,7 @@ html {
     position: relative;
     margin-left: 35px;
     font-size: 18px;
+    color: #0f5a47;
 }
 
 .form__label_option::before {
