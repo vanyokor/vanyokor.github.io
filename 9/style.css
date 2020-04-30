@@ -1,3 +1,39 @@
+/* 
+ * Шрифт иконок
+*/
+@font-face {
+  font-family: 'advantages';
+  src: url('/font/advantages.eot?35414351');
+  src: url('/font/advantages.eot?35414351#iefix') format('embedded-opentype'),
+       url('/font/advantages.woff2?35414351') format('woff2'),
+       url('/font/advantages.woff?35414351') format('woff'),
+       url('/font/advantages.ttf?35414351') format('truetype'),
+       url('/font/advantages.svg?35414351#advantages') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+ .advantage-list__icon:before {
+  font-family: "advantages";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.advantage-list__icon-1:before { content: '\e800';font-size: 67px; }
+.advantage-list__icon-2:before { content: '\e801'; font-size: 67px;}
+.advantage-list__icon-3:before { content: '\e802';font-size: 63px;}
+
+/*
+ * Блочная модель 
+ */
 body,
 html {
     font-family: 'Alegreya Sans', sans-serif;
