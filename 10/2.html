@@ -2,14 +2,14 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Занятие 9.1</title>
+	<title>Занятие 10.1</title>
 	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/normalize.css">
-	<link rel="stylesheet" href="style.css?v=2">
+	<link rel="stylesheet" href="1.css">
 </head>
 <body>
 	<header id="page-top" class="wrap">
-		<a lang="company-logo" href="#">
+		<a class="company-logo" href="#">
 			<img class="company-logo__img" src="/img/CHO_CCO.jpg" alt="CHOCCO">
 		</a>
 		<nav class="menu-wrap">
@@ -55,44 +55,50 @@
 		</footer>
 	</section>
 	
-	<main class="main">
-		<section class="wrap">
-			<header class="section-header">
-				<h2 class="section-header__text">Почему chocco?</h2>
-				<p class="section-header__subtext">В нашем мире все происходит очень быстро, поэтому мы
-					делаем батончики, которые удобно взять с собой.</p>
-			</header>
-			<div class="advantage-list">
-				<section class="advantage-list__item">
-					<img class="advantage-list__img" src="/img/иконка1.png" alt="">
-					<h3 class="advantage-list__title">Полезно</h3>
-					<p class="advantage-list__subtitle">Натуральность - ключевое качество
-						нашей продукции. Мы используем
-						только природные ингредиенты.</p>
-				</section>
-				<section class="advantage-list__item">
-					<img class="advantage-list__img" src="/img/иконка1.png" alt="">
-					<h3 class="advantage-list__title">Вкусно</h3>
-					<p class="advantage-list__subtitle">Нежный, ненавязчивый, изысканный –
-						так клиенты описывают вкусовые
-						качества наших батончиков.</p>
-				</section>
-				<section class="advantage-list__item">
-					<img class="advantage-list__img" src="/img/иконка1.png" alt="">
-					<h3 class="advantage-list__title">Питательно</h3>
-					<p class="advantage-list__subtitle">Высокое содержание качественного
-						белка, а также всех необходимых
-						витаминов и минералов.</p>
-				</section>
-			</div>
-		</section>
+	<main class="main wrap">
+		<header class="section-header">
+			<h2 class="section-header__text section-header__text_small-padding">Почему chocco?</h2>
+			<p class="section-header__subtext">В нашем мире все происходит очень быстро, поэтому мы<br>
+				делаем батончики, которые удобно взять с собой.</p>
+		</header>
+		<div class="advantage-list bz-border">
+			<section class="advantage-list__item">
+				<div class="advantage-list__circle">
+					<i class="advantage-list__icon advantage-list__icon-1"></i>
+				</div>
+				<h3 class="advantage-list__title">Полезно</h3>
+				<p class="advantage-list__subtitle">Натуральность - ключевое качество<br>
+					нашей продукции. Мы используем<br>
+					только природные ингредиенты.</p>
+			</section>
+			<div class="advantage-list__delimiter"></div>
+			<section class="advantage-list__item">
+				<div class="advantage-list__circle">
+					<i class="advantage-list__icon advantage-list__icon-2"></i>
+				</div>
+				<h3 class="advantage-list__title">Вкусно</h3>
+				<p class="advantage-list__subtitle">Нежный, ненавязчивый, изысканный –<br>
+					так клиенты описывают вкусовые<br>
+					качества наших батончиков.</p>
+			</section>
+			<div class="advantage-list__delimiter"></div>
+			<section class="advantage-list__item">
+				<div class="advantage-list__circle">
+					<i class="advantage-list__icon advantage-list__icon-3"></i>
+				</div>
+				<h3 class="advantage-list__title">Питательно</h3>
+				<p class="advantage-list__subtitle">Высокое содержание качественного<br>
+					белка, а также всех необходимых<br>
+					витаминов и минералов.</p>
+			</section>
+		</div>
 	</main>
 	
 	<section id="slider" class="wrap">
 		<ul class="slides">
 			<li class="slides__item">
 				<div class="slides__image-wrap">
-					<img class="slides__image" src="/img/Батончики.png">
+					<img class="slides__image" src="/img/Батончики.png" alt="Батончики">
 				</div>
 				<article class="slides__article">
 					<header class="slides__header">
@@ -128,19 +134,20 @@
 		<div class="teamlist">
 			<article class="teamlist__member">
 				<picture class="teamlist__img-wrap">
-					<img class="teamlist__img" src="/img/photo-1542211295-d5bf730e56cd.png">
+					<img class="teamlist__img" src="/img/photo-1542211295-d5bf730e56cd.png" alt="Борис Федорович">
 				</picture>
 				<h3 class="teamlist__name">Борис Федорович <span class="arrow"></span></h3>
 			</article>
+			<div></div>
 			<article class="teamlist__member teamlist__member_offset">
 				<picture class="teamlist__img-wrap">
-					<img class="teamlist__img" src="/img/photo-1548534984-ddf53b264a58.png">
+					<img class="teamlist__img" src="/img/photo-1548534984-ddf53b264a58.png" alt="Алла Иванова">
 				</picture>
 				<h3 class="teamlist__name">Алла Иванова <span class="arrow"></span></h3>
 			</article>
 			<article class="teamlist__member teamlist__member_with-profession">
 				<picture class="teamlist__img-wrap">
-					<img class="teamlist__img" src="/img/photo-1551153771-1a67a570d583.png">
+					<img class="teamlist__img" src="/img/photo-1551153771-1a67a570d583.png" alt="Кирилл Матросов">
 				</picture>
 				<h3 class="teamlist__name">Кирилл Матросов <span class="arrow"></span></h3>
 				<p class="teamlist__profession">Оператор</p>
@@ -148,7 +155,7 @@
 			</article>
 			<article class="teamlist__member">
 				<picture class="teamlist__img-wrap">
-					<img class="teamlist__img" src="/img/photo-1549351512-c5e12b11e283.png">
+					<img class="teamlist__img" src="/img/photo-1549351512-c5e12b11e283.png" alt="Мила Рыжкова">
 				</picture>
 				<h3 class="teamlist__name">Мила Рыжкова <span class="arrow"></span></h3>
 			</article>
