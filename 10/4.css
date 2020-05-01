@@ -230,10 +230,9 @@ html {
 .advantage-list__item-1 .advantage-list__circle,
 .advantage-list__item-2 .advantage-list__circle,
 .advantage-list__item-3 .advantage-list__circle{
-    will-change: transform;
     animation-name: turnflip;
     animation-delay: 9s;
-    animation-duration: 9s;
+    animation-duration: 12s;
     animation-iteration-count: infinite;
 }
 .advantage-list__item-2 .advantage-list__circle{
@@ -277,7 +276,6 @@ html {
     left: -41px;
 }
 .advantage-list__delimiter-dots span{
-    will-change: transform;
     display: inline-block;
     width: 13px;
     height: 13px;
@@ -609,14 +607,16 @@ html {
  */
 
 .decoration {
+    user-select: none;
     position: absolute;
     z-index: 1;
 }
 
 .decoration_pattern {
+    user-select: none;
     width: 196px;
     height: 578px;
-    background-image: url(../../img/patern.png);
+    background-image: url(/img/patern.png);
     top: -240px;
     right: 0;
 }
@@ -624,7 +624,7 @@ html {
 .decoration_berry-1 {
     width: 135px;
     height: 112px;
-    background-image: url(../../img/berry1.png);
+    background-image: url(/img/berry1.png);
     top: -65px;
     right: 13px;
 }
@@ -632,7 +632,43 @@ html {
 .decoration_berry-2 {
     width: 104px;
     height: 114px;
-    background-image: url(../../img/berry2.png);
+    background-image: url(/img/berry2.png);
     left: 35px;
     bottom: -45px;
+}
+
+.decoration_berry-3 {
+    width: 161px;
+    height: 227px;
+    background-image: url(/img/malina_2202.png);
+    left: 1px;
+    bottom: -101px;
+}
+.decoration_leaves-1 {
+    pointer-events: none;
+    width: 1056px;
+    height: 353px;
+    background-image: url(/img/listya_2170.png);
+    left: 29px;
+    bottom: -54px;
+}
+.decoration_berry-4 {
+    width: 387px;
+    height: 217px;
+    background-image: url(/img/yagody_2141.png);
+    right: 91px;
+    bottom: -43px;
+}
+.decoration_berry-1,
+.decoration_berry-2,
+.decoration_berry-3,
+.decoration_berry-4{
+    transition: transform 1s;
+}
+.decoration_berry-1:hover,
+.decoration_berry-2:hover,
+.decoration_berry-3:hover,
+.decoration_berry-4:hover{
+
+    transform: scale(1.2) rotateZ(4deg);
 }
