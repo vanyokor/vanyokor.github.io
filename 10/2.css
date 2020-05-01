@@ -122,8 +122,8 @@ html {
     color: #ffffff;
     text-decoration: none;
     transition: color 1s;
+    position: relative;
 }
-
 
 .menu-tel {
     font-size: 24px;
@@ -137,6 +137,21 @@ html {
 .menu__link:hover,
 .menu-tel:hover{
     color: #FF8C00;
+}
+
+.menu__link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: currentColor;
+    transition: width 1s;
+}
+.menu__link:hover::after{
+    width: 100%;
 }
 
 .banner__title{
