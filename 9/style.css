@@ -215,15 +215,30 @@ html {
 .advantage-list__delimiter {
     position: relative;
 }
-.advantage-list__delimiter:before{
+.advantage-list__delimiter-dots {
     position: absolute;
-    content: "";
-    background-image: url(/img/delimiter.png);
-    display: block;
-    width: 67px;
-    height: 21px;
+    width: 82px;
     top: 58px;
-    left: -33px;
+    left: -41px;
+}
+.advantage-list__delimiter-dots span{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin: 0 7px;
+    border-radius: 50%;
+    background-color: #f2f5f4;
+    animation-name: rubberBand;
+    animation-delay: 9.2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.advantage-list__delimiter-dots span:nth-child(2){
+    box-shadow: 0 0 0 4px #f2f5f4;
+    animation-delay: 9.4s;
+}
+.advantage-list__delimiter-dots span:nth-child(3){
+    animation-delay: 9.6s;
 }
 /* 
  *  Слайдер 
