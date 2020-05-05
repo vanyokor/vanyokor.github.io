@@ -39,24 +39,6 @@ html {
     font-family: 'Alegreya Sans', sans-serif;
 }
 
-.bz-content {
-  box-sizing: content-box;
-}
-.bz-content *,
-.bz-content *::before,
-.bz-content *::after {
-  box-sizing: inherit;
-}
-
-.bz-border {
-  box-sizing: border-box;
-}
-.bz-border *,
-.bz-border *::before,
-.bz-border *::after {
-  box-sizing: inherit;
-}
-
 .section-header__text {
     text-align: center;
     font-size: 48px;
@@ -196,6 +178,11 @@ html {
     background-color: #f2f5f4;
     padding: 25px;
     margin: 0 auto;
+}
+
+.advantage-list__circle_content-size{
+    width: 75px;
+    height: 75px;
 }
 
 .advantage-list__title {
@@ -579,4 +566,22 @@ html {
     background-image: url(../../img/berry2.png);
     left: 35px;
     bottom: -45px;
+}
+
+.bz-content {
+  box-sizing: content-box;
+}
+.bz-content *,
+.bz-content *::before,
+.bz-content *::after {
+  box-sizing: inherit;
+}
+
+.bz-border {
+  box-sizing: border-box;
+}
+.bz-border *,
+.bz-border *::before,
+.bz-border *::after {
+  box-sizing: inherit;
 }
