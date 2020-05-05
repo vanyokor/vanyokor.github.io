@@ -171,6 +171,10 @@ html {
     padding: 0 32px;
 }
 
+.bz-content .advantage-list__item{
+    padding: 0;
+}
+
 .advantage-list__circle {
     border-radius: 50%;
     width: 125px;
@@ -180,7 +184,7 @@ html {
     margin: 0 auto;
 }
 
-.advantage-list__circle_content-size{
+.bz-content .advantage-list__circle{
     width: 75px;
     height: 75px;
 }
