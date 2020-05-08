@@ -1,0 +1,24 @@
+#header{
+    background-color: #42e68c;
+    padding: 1rem;
+}
+
+#content{
+    background-color: #fff;
+    padding: 1rem;
+}
+
+#sidebar-left{
+    background-color: #29bfce;
+    padding: 1rem;
+}
+
+#sidebar-right{
+    background-color: #7c8cff;
+    padding: 1rem;
+}
+
+#footer{
+    background-color: #ffd29b;
+    padding: 1rem;
+}
