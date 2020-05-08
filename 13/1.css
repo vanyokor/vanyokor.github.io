@@ -1,24 +1,24 @@
-#header{
+.header{
     background-color: #42e68c;
     padding: 1rem;
 }
 
-#content{
+.content{
     background-color: #fff;
     padding: 1rem;
 }
 
-#sidebar-left{
+.sidebar-left{
     background-color: #29bfce;
     padding: 1rem;
 }
 
-#sidebar-right{
+.sidebar-right{
     background-color: #7c8cff;
     padding: 1rem;
 }
 
-#footer{
+.footer{
     background-color: #ffd29b;
     padding: 1rem;
 }
