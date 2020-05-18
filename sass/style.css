@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* Этот CSS построен с использованием SASS. */
+/** переменные */
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+}
+
+p {
+  font-size: 1.4285714286rem;
+}
+
+/** Вложенности */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+/* Cоставной селектор */
+.btn {
+  color: red;
+}
+.btn-text {
+  color: green;
+}
+
+/** пространствa имен */
+.funky {
+  font-family: fantasy;
+  font-size: 30em;
+  font-weight: bold;
+}
+
+/** Импорт фрагмента */
+div {
+  background: red;
+}
+
+/** Миксины */
+.box {
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+/** Наследование */
+.success, .error {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+/** математика */
+.container {
+  width: 100%;
+  font-size: 0.8571428571rem;
+}
+
+article[role="main"] {
+  float: left;
+  width: 62.5%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 31.25%;
+}
+
+/* Цикл */
+.puma-icon {
+  background-image: url("/images/puma.png");
+}
+
+.sea-slug-icon {
+  background-image: url("/images/sea-slug.png");
+}
+
+.egret-icon {
+  background-image: url("/images/egret.png");
+}
+
+.salamander-icon {
+  background-image: url("/images/salamander.png");
+}
+
+.item-1 {
+  width: 2em;
+}
+
+.item-2 {
+  width: 4em;
+}
+
+.item-3 {
+  width: 6em;
+}

@@ -1,0 +1,103 @@
+// Функции    
+@function rem($target-px) 
+  @return ($target-px / $root-font-size) * 1rem
+
+// Комментарии в компиляции
+$lang: "SASS"
+/* Этот CSS построен с использованием #{$lang}. */
+
+/** переменные **/
+$font-stack:    Helvetica, sans-serif
+$primary-color: #333
+$root-font-size: 14px
+
+body
+  font: 100% $font-stack
+  color: $primary-color
+  font-size: $root-font-size
+
+p
+    font-size: rem(20px)
+
+/** Вложенности **/
+nav
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+  li
+    display: inline-block
+
+  a
+    display: block
+    padding: 6px 12px
+    text-decoration: none
+
+/* Cоставной селектор */
+.btn
+    color: red
+
+    &-text
+        color: green
+
+/** пространствa имен **/
+.funky 
+  font:
+    family: fantasy
+    size: 30em
+    weight: bold
+
+
+/** Импорт фрагмента **/
+@import import
+
+/** Миксины **/
+=transform($property)
+  -webkit-transform: $property
+  -ms-transform: $property
+  transform: $property
+
+.box
+  +transform(rotate(30deg))
+
+
+/** Наследование **/
+%message-shared
+  border: 1px solid #ccc
+  padding: 10px
+  color: #333
+
+.success
+  @extend %message-shared
+  border-color: green
+
+.error
+  @extend %message-shared
+  border-color: red
+
+
+/** математика **/
+.container
+  width: 100%
+  font-size: rem(12px)
+
+article[role="main"]
+  float: left
+  width: 600px / 960px * 100%
+
+
+aside[role="complementary"]
+  float: right
+  width: 300px / 960px * 100%
+
+
+/* Цикл */
+@each $animal in puma, sea-slug, egret, salamander
+  .#{$animal}-icon 
+    background-image: url('/images/#{$animal}.png')
+
+@for $i from 1 through 3 
+  .item-#{$i} 
+      width: 2em * $i
+
