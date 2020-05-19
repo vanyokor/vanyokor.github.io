@@ -1,0 +1,37 @@
+// 
+//  --- Переменные ---
+//
+
+// Шрифты
+$font-main: 'Roboto', sans-serif
+$font-condensed: 'Roboto Condensed', sans-serif
+
+// Размеры
+$root-font-size: 14px
+
+// Цвета
+$black: #000
+$white: #fff
+
+// 
+//  --- Функции ---
+//
+
+//Перевод px в rem
+@function rem($target-px) 
+  @return ($target-px / $root-font-size) * 1rem
+
+
+// 
+//  --- Контент ---
+//
+
+@import layout
+@import buttons
+
+@import welcome
+@import header
+@import menu
+@import contact
+
+

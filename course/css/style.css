@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/*  Подготовка html */
+html, body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: "icons";
+  src: url("/course/font/icons.eot?90484239");
+  src: url("/course/font/icons.eot?90484239#iefix") format("embedded-opentype"), url("/course/font/icons.woff?90484239") format("woff"), url("/course/font/icons.ttf?90484239") format("truetype"), url("/course/font/icons.svg?90484239#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.icon {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 10px;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button, .welcome-text__subtitle, .logo__link, .menu__link {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.logo__link, .company-communication__phone, .company-communication__email {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button {
+  display: inline-block;
+  background: #000;
+  -webkit-box-shadow: 0px 16px 32px rgba(69, 90, 100, 0.4);
+          box-shadow: 0px 16px 32px rgba(69, 90, 100, 0.4);
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 10px 17px;
+  position: relative;
+}
+.button::after {
+  background: #000;
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-transform: scaleX(0.6) rotate(45deg);
+  transform: scaleX(0.5) rotate(45deg);
+  height: 28px;
+  width: 28px;
+  right: -12px;
+  top: 6px;
+  border-radius: 5px;
+  z-index: -1px;
+}
+
+.button_large {
+  font-size: 24px;
+  line-height: 28px;
+  padding: 17px 37px;
+}
+.button_large::after {
+  height: 42px;
+  width: 42px;
+  right: -19px;
+  top: 10px;
+}
+
+/* Блок приветствия */
+#welcome-block {
+  position: relative;
+  overflow: hidden;
+  min-height: 51.4285714286rem;
+  background: url(/course/img/gradient.png);
+}
+
+#welcome-text {
+  margin-top: 86px;
+}
+
+.welcome-text__label {
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 63px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-left: 163px;
+  margin: 0;
+  position: relative;
+  top: 8px;
+}
+
+.welcome-text__subtitle {
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 26px;
+}
+
+.welcome-background {
+  background-image: url(/course/img/welcome-background.png);
+  height: 721px;
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  left: 0;
+}
+
+/* Блок header */
+#main-navigation {
+  padding-top: 1.4285714286rem;
+  padding-bottom: 1.7857142857rem;
+}
+
+.logo__link {
+  font-weight: bold;
+  font-size: 3.4285714286rem;
+  text-transform: uppercase;
+  line-height: 3rem;
+}
+
+/* Меню */
+.menu__list {
+  margin: 0;
+  padding: 0;
+  padding-left: 1.8571428571rem;
+  list-style: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1428571429rem;
+  line-height: 1.3571428571rem;
+}
+
+.menu__item {
+  padding: 0.3571428571rem;
+}
+
+/* Контактная информация */
+.company-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.company-address .icon {
+  font-size: 26px;
+}
+
+.company-address__text {
+  line-height: 1.7142857143rem;
+  font-style: normal;
+  display: inline;
+}
+
+.company-communication .icon {
+  font-size: 19px;
+}
+
+.company-communication__phone {
+  font-weight: bold;
+  font-size: 1.7142857143rem;
+  line-height: 2rem;
+}
+
+.company-communication__email {
+  line-height: 1.1428571429rem;
+  margin: 8px 0 0 33px;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=style.css.map */

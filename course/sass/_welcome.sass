@@ -1,0 +1,40 @@
+/* Блок приветствия */
+#welcome-block
+    position: relative
+    overflow: hidden
+    min-height: rem(720px)
+    // background: linear-gradient(0deg, #651FFF 0%, #FF5900 33.5%, #fccd71 63%, #FFFFFF 100%)
+    background: url(/course/img/gradient.png)
+    z-index: 0
+
+
+#welcome-text
+    margin-top: 86px
+
+.welcome-text__label
+    font-weight: bold
+    font-size: 54px
+    line-height: 63px
+    text-transform: uppercase
+    color: $white
+    padding-left: 163px
+    margin: 0
+    position: relative
+    top: 8px
+
+.welcome-text__subtitle
+    @extend %font-condensed
+    font-size: 22px
+    line-height: 28px
+    margin-bottom: 26px
+
+.welcome-background
+    background-image: url(/course/img/welcome-background.png)
+    height: 721px
+    width: 100%
+    position: absolute
+    background-repeat: no-repeat
+    background-position: center
+    top: 0
+    left: 0
+    z-index: -1

@@ -1,0 +1,27 @@
+/* Контактная информация */
+.company-address
+    display: flex
+
+    .icon
+        font-size: 26px
+
+.company-address__text
+    line-height: rem(24px)
+    font-style: normal
+    display: inline
+
+.company-communication
+    .icon
+        font-size: 19px
+
+.company-communication__phone
+    @extend %link-black
+    font-weight: bold
+    font-size: rem(24px)
+    line-height: rem(28px)
+
+.company-communication__email
+    @extend %link-black
+    line-height: rem(16px)
+    margin: 8px 0 0 33px
+    display: inline-block
