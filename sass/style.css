@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Этот CSS построен с использованием SASS. */
-/** переменные */
+/** переменные **/
 body {
   font: 100% Helvetica, sans-serif;
   color: #333;
@@ -8,18 +8,20 @@ body {
 }
 
 p {
-  font-size: 1.4285714286rem;
+  font-size: 1.42857rem;
 }
 
-/** Вложенности */
+/** Вложенности **/
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 nav li {
   display: inline-block;
 }
+
 nav a {
   display: block;
   padding: 6px 12px;
@@ -30,29 +32,30 @@ nav a {
 .btn {
   color: red;
 }
+
 .btn-text {
   color: green;
 }
 
-/** пространствa имен */
+/** пространствa имен **/
 .funky {
   font-family: fantasy;
   font-size: 30em;
   font-weight: bold;
 }
 
-/** Импорт фрагмента */
+/** Импорт фрагмента **/
 div {
   background: red;
 }
 
-/** Миксины */
+/** Миксины **/
 .box {
   -webkit-transform: rotate(30deg);
   transform: rotate(30deg);
 }
 
-/** Наследование */
+/** Наследование **/
 .success, .error {
   border: 1px solid #ccc;
   padding: 10px;
@@ -67,10 +70,10 @@ div {
   border-color: red;
 }
 
-/** математика */
+/** математика **/
 .container {
   width: 100%;
-  font-size: 0.8571428571rem;
+  font-size: 0.85714rem;
 }
 
 article[role="main"] {
@@ -111,3 +114,4 @@ aside[role="complementary"] {
 .item-3 {
   width: 6em;
 }
+/*# sourceMappingURL=style.css.map */

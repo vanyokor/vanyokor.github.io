@@ -20,13 +20,17 @@ html, body {
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: 10px;
+  margin-right: 0.7142857143rem;
   text-align: center;
   font-variant: normal;
   text-transform: none;
   line-height: 1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
 }
 
 .button, .welcome-text__subtitle, .logo__link, .menu__link {
@@ -38,10 +42,6 @@ html, body {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-}
-
 .button {
   display: inline-block;
   background: #000;
@@ -51,9 +51,9 @@ img {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
-  padding: 10px 17px;
+  font-size: 1.2857142857rem;
+  line-height: 1.5rem;
+  padding: 0.7142857143rem 1.2142857143rem;
   position: relative;
 }
 .button::after {
@@ -63,24 +63,24 @@ img {
   position: absolute;
   -webkit-transform: scaleX(0.6) rotate(45deg);
   transform: scaleX(0.5) rotate(45deg);
-  height: 28px;
-  width: 28px;
-  right: -12px;
-  top: 6px;
+  height: 2rem;
+  width: 2rem;
+  right: -0.8571428571rem;
+  top: 0.4285714286rem;
   border-radius: 5px;
-  z-index: -1px;
+  z-index: -1;
 }
 
 .button_large {
-  font-size: 24px;
-  line-height: 28px;
-  padding: 17px 37px;
+  font-size: 1.7142857143rem;
+  line-height: 2rem;
+  padding: 1.2142857143rem 2.6428571429rem;
 }
 .button_large::after {
-  height: 42px;
-  width: 42px;
-  right: -19px;
-  top: 10px;
+  height: 3rem;
+  width: 3rem;
+  right: -1.3571428571rem;
+  top: 0.7142857143rem;
 }
 
 /* Блок приветствия */
@@ -93,30 +93,30 @@ img {
 }
 
 #welcome-text {
-  margin-top: 86px;
+  margin-top: 6.1428571429rem;
 }
 
 .welcome-text__label {
   font-weight: bold;
-  font-size: 54px;
-  line-height: 63px;
+  font-size: 3.8571428571rem;
+  line-height: 4.5rem;
   text-transform: uppercase;
   color: #fff;
-  padding-left: 163px;
+  padding-left: 11.6428571429rem;
   margin: 0;
   position: relative;
-  top: 8px;
+  top: 0.5714285714rem;
 }
 
 .welcome-text__subtitle {
-  font-size: 22px;
-  line-height: 28px;
-  margin-bottom: 26px;
+  font-size: 1.5714285714rem;
+  line-height: 2rem;
+  margin-bottom: 1.8571428571rem;
 }
 
 .welcome-background {
   background-image: url(/course/img/welcome-background.png);
-  height: 721px;
+  height: 51.5rem;
   width: 100%;
   position: absolute;
   background-repeat: no-repeat;
@@ -167,7 +167,7 @@ img {
   display: flex;
 }
 .company-address .icon {
-  font-size: 26px;
+  font-size: 1.8571428571rem;
 }
 
 .company-address__text {
@@ -177,7 +177,7 @@ img {
 }
 
 .company-communication .icon {
-  font-size: 19px;
+  font-size: 1.3571428571rem;
 }
 
 .company-communication__phone {
@@ -190,6 +190,10 @@ img {
   line-height: 1.1428571429rem;
   margin: 8px 0 0 33px;
   display: inline-block;
+}
+
+#solution-block {
+  min-height: 650px;
 }
 
 /*# sourceMappingURL=style.css.map */
