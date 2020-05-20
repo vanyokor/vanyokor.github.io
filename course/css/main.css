@@ -1,8 +1,21 @@
 @charset "UTF-8";
+.button, .welcome-text__subtitle, .logo__link, .menu__link {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.logo__link, .company-communication__phone, .company-communication__email {
+  color: #000;
+  text-decoration: none;
+}
+
 /*  Подготовка html */
 html, body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+}
+
+img {
+  max-width: 100%;
 }
 
 @font-face {
@@ -31,19 +44,6 @@ html, body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-.button, .welcome-text__subtitle, .logo__link, .menu__link {
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-.logo__link, .company-communication__phone, .company-communication__email {
-  color: #000;
-  text-decoration: none;
 }
 
 .button {
@@ -93,12 +93,12 @@ img {
   top: 0.71429rem;
 }
 
-/* Блок приветствия */
-#welcome-block {
+/* Секция приветствия */
+#welcome-section {
   position: relative;
   overflow: hidden;
   min-height: 51.42857rem;
-  background: url(/course/img/gradient.png);
+  background: url(/course/img/welcome/gradient.png);
   z-index: 0;
 }
 
@@ -125,7 +125,7 @@ img {
 }
 
 .welcome-background {
-  background-image: url(/course/img/welcome-background.png);
+  background-image: url(/course/img/welcome/welcome-background.png);
   height: 51.5rem;
   width: 100%;
   position: absolute;
@@ -134,6 +134,61 @@ img {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+/* Решение ситуации */
+#solution-section {
+  min-height: 46.21429rem;
+}
+
+/* Что вы получите */
+#do-you-get-section {
+  min-height: 51.42857rem;
+  background-color: #7224ea;
+}
+
+/* Почему так сложно */
+#why-hard-section {
+  min-height: 65.35714rem;
+}
+
+/* Кому интересно */
+#who-cares-section {
+  min-height: 28.21429rem;
+}
+
+#who-cares-wrap {
+  background-color: #7224ea;
+  min-height: 21.07143rem;
+}
+
+/* Как организован процесс */
+#process-section {
+  min-height: 54.28571rem;
+  background-color: #f5f5f5;
+}
+
+/* Чего добились другие */
+#ohters-achieved-section {
+  min-height: 51.42857rem;
+}
+
+/* Как начать */
+#how-start-section {
+  min-height: 21.42857rem;
+  background-color: #661fff;
+}
+
+/* Форма */
+#form-section {
+  min-height: 51.42857rem;
+  background-color: #f5f5f3;
+}
+
+/* Подвал */
+#footer-section {
+  min-height: 22.85714rem;
+  background-color: #f5f5f5;
 }
 
 /* Блок header */
@@ -201,9 +256,5 @@ img {
   line-height: 1.14286rem;
   margin: 0.57143rem 0 0 2.35714rem;
   display: inline-block;
-}
-
-#solution-block {
-  min-height: 650px;
 }
 /*# sourceMappingURL=main.css.map */
