@@ -1,4 +1,18 @@
 /* Как организован процесс */
 #process-section
+    counter-reset: steps;
     min-height: rem(760px)
     background-color: $gray
+
+    .container
+        min-height: rem(760px)
+        position: relative
+
+.process-background
+    position: absolute
+    @include image("/process/process.png")
+    width: rem(522px)
+    height: rem(583px)
+    bottom: 0
+    left: rem(347px)
+    z-index: 1

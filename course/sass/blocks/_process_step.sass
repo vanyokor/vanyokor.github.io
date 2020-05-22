@@ -1,0 +1,50 @@
+.process-stages
+    margin: 0
+    padding: 0
+    list-style: none
+    z-index: 2
+
+.process-stages__step
+    font-size: rem(16px)
+    line-height: rem(20px)
+    position: absolute
+    top: 0
+    left: 0
+
+    &::before
+        @extend %font-condensed
+        counter-increment: steps;
+        content: counter(steps)
+        font-weight: bold
+        font-size: 24px
+        position: absolute
+        top: 0
+        left: -80px
+        display: block
+        width: 62px
+        height: 62px
+        color: $white
+        padding: 22px 26px
+        @include image("/process/point.svg")
+
+.process-stages__step_right
+    text-align: right
+    &::before
+        left: unset
+        right: -80px
+
+.process-stages__step:nth-child(1)
+    top: 537px
+    left: 122px
+
+.process-stages__step:nth-child(2)
+    top: 260px
+    left: 43px
+
+.process-stages__step:nth-child(3)
+    top: 165px
+    left: 769px
+
+.process-stages__step:nth-child(4)
+    top: 391px
+    left: 913px
