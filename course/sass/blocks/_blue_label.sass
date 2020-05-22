@@ -4,28 +4,30 @@
 
 .blue-label__text
     position: absolute
+    top: 0
+    left: 0
     color: $white
-    font-size: 18px
+    font-size: rem(18px)
     background-color: $blue
     margin: 0
     display: inline-block
     font-weight: bold
-    padding: 10px 23px
+    padding: rem(10px) rem(23px)
 
     &::before,
     &::after
         content: ""
         @include image("/misc/label.svg")
-        width: 5px
-        height: 40px
+        width: rem(5px)
+        height: rem(40px)
         display: block
         position: absolute
 
     &::before
         top: 0
-        left: -5px
+        left: rem(-5px)
     
     &::after
         top: 0
-        right: -5px
+        right: rem(-5px)
         transform: rotate(180deg);

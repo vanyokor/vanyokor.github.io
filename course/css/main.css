@@ -8,6 +8,10 @@
   text-decoration: none;
 }
 
+.situation-block, .himself-block {
+  border-right: 1px solid #000;
+}
+
 /*  Подготовка html */
 html, body {
   font-family: "Roboto", sans-serif;
@@ -103,7 +107,7 @@ figure {
 
 .button_red {
   background: #FF5900;
-  padding: 16px 38px;
+  padding: 1.14286rem 2.71429rem;
 }
 
 .button_red::after {
@@ -111,6 +115,16 @@ figure {
   background: #FF5900;
   -webkit-transform: scaleX(0.6) rotate(45deg);
           transform: scaleX(0.6) rotate(45deg);
+}
+
+.button_long {
+  padding: 1.14286rem 6.64286rem;
+}
+
+.button_long::after {
+  content: '';
+  -webkit-transform: scaleX(0.7) rotate(45deg);
+          transform: scaleX(0.7) rotate(45deg);
 }
 
 /* Секция приветствия */
@@ -165,6 +179,10 @@ figure {
   top: 1.57143rem;
 }
 
+.situation-block {
+  padding-right: 0;
+}
+
 .situation-block .blue-label__text {
   left: -6.78571rem;
 }
@@ -174,10 +192,6 @@ figure {
   margin-top: 7.14286rem;
 }
 
-.solution-example {
-  border-right: 1px solid #000;
-}
-
 .solution-example__image {
   width: 100%;
 }
@@ -185,9 +199,9 @@ figure {
 .solution-example__caption {
   font-size: 1.28571rem;
   line-height: 2rem;
-  padding-top: 4.5rem;
+  padding-top: 3.92857rem;
   padding-bottom: 6.35714rem;
-  padding-right: 4rem;
+  padding-right: 5.35714rem;
 }
 
 .solution-list {
@@ -289,6 +303,86 @@ figure {
   min-height: 65.35714rem;
 }
 
+#why-hard-section .blue-label__text {
+  left: 0.42857rem;
+  top: 0.57143rem;
+}
+
+.himself-block {
+  padding-right: 0;
+  min-height: 52.35714rem;
+}
+
+.himself-list {
+  margin-top: 7rem;
+  padding-left: 2.28571rem;
+  padding-right: 9rem;
+  list-style: none;
+  margin-bottom: 3.78571rem;
+}
+
+.himself-list__item {
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.42857rem;
+  margin-bottom: 2.21429rem;
+}
+
+.himself-list__item::before {
+  position: absolute;
+  content: "";
+  top: 0.14286rem;
+  left: -2.28571rem;
+  display: block;
+  width: 0.57143rem;
+  height: 0.57143rem;
+  background: #000;
+  border-radius: 50%;
+}
+
+.partner-block {
+  padding-left: 3.92857rem;
+}
+
+.partner-list {
+  margin-top: 6.57143rem;
+}
+
+.partner-list__item {
+  min-height: 2.71429rem;
+  margin-bottom: 4.07143rem;
+  background-image: url("../img/whyhard/mishen.svg");
+  background-repeat: no-repeat;
+  background-position: 21px 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partner-list__text {
+  margin: 0;
+  padding-left: 3.71429rem;
+}
+
+.partner-motive {
+  background-image: url("../img/whyhard/top.svg");
+  min-height: 2.71429rem;
+  background-repeat: no-repeat;
+  background-position: 7px 0px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 59px;
+  margin-top: 50px;
+  padding-left: 129px;
+  padding-top: 9px;
+  padding-right: 65px;
+  padding-bottom: 32px;
+}
+
 /* Кому интересно */
 #who-cares-section {
   min-height: 28.21429rem;
@@ -297,6 +391,8 @@ figure {
 #who-cares-wrap {
   background-color: #7224ea;
   min-height: 21.07143rem;
+  -webkit-box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.08), 0px 6px 12px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.08), 0px 6px 12px rgba(0, 0, 0, 0.14);
 }
 
 /* Как организован процесс */
@@ -402,32 +498,34 @@ figure {
 
 .blue-label__text {
   position: absolute;
+  top: 0;
+  left: 0;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.28571rem;
   background-color: #661fff;
   margin: 0;
   display: inline-block;
   font-weight: bold;
-  padding: 10px 23px;
+  padding: 0.71429rem 1.64286rem;
 }
 
 .blue-label__text::before, .blue-label__text::after {
   content: "";
   background-image: url("../img/misc/label.svg");
-  width: 5px;
-  height: 40px;
+  width: 0.35714rem;
+  height: 2.85714rem;
   display: block;
   position: absolute;
 }
 
 .blue-label__text::before {
   top: 0;
-  left: -5px;
+  left: -0.35714rem;
 }
 
 .blue-label__text::after {
   top: 0;
-  right: -5px;
+  right: -0.35714rem;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }

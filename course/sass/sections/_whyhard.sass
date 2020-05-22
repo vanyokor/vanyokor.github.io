@@ -1,3 +1,70 @@
 /* Почему так сложно */
 #why-hard-section
     min-height: rem(915px)
+
+    .blue-label__text
+        left: rem(6px)
+        top: rem(8px)
+
+.himself-block
+    @extend %right-border
+    padding-right: 0
+    min-height: rem(733px)
+
+.himself-list
+    margin-top: rem(98px)
+    padding-left: rem(32px)
+    padding-right: 9rem
+    list-style: none
+    margin-bottom: rem(53px)
+
+.himself-list__item
+    position: relative
+    font-size: rem(14px)
+    line-height: rem(20px)
+    margin-bottom: rem(31px)
+
+    &::before
+        position: absolute
+        content: ""
+        top: rem(2px)
+        left: rem(-32px)
+        display: block
+        width: rem(8px)
+        height: rem(8px)
+        background: $black
+        border-radius: 50%
+
+.partner-block
+    padding-left: rem(55px)
+
+.partner-list
+    margin-top: rem(92px)
+
+.partner-list__item
+    min-height: rem(38px)
+    margin-bottom: rem(57px)
+    @include image("/whyhard/mishen.svg")
+    background-repeat: no-repeat
+    background-position: 21px 2px
+    display: flex
+    align-items: center
+
+.partner-list__text
+    margin: 0
+    padding-left: rem(52px)
+
+.partner-motive
+    @include image("/whyhard/top.svg")
+    min-height: rem(38px)
+    background-repeat: no-repeat
+    background-position: 7px 0px
+    font-weight: bold
+    font-size: 18px
+    line-height: 24px
+    margin-bottom: 59px
+    margin-top: 50px
+    padding-left: 129px
+    padding-top: 9px
+    padding-right: 65px
+    padding-bottom: 32px

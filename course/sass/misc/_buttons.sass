@@ -38,9 +38,16 @@
 
 .button_red
     background: $red
-    padding: 16px 38px
+    padding: rem(16px) rem(38px)
 
     &::after
         content: ''
         background: $red
         transform: scaleX(0.6) rotate(45deg)
+
+.button_long
+    padding: rem(16px) rem(93px)
+
+    &::after
+        content: ''
+        transform: scaleX(0.7) rotate(45deg)
