@@ -18,14 +18,12 @@
         content: ''
         display: block
         position: absolute
-        -webkit-transform: scaleX(0.6) rotate(45deg)
         transform: scaleX(0.5) rotate(45deg)
         height: rem(28px)
         width: rem(28px)
         right: rem(-12px)
         top: rem(6px)
         border-radius: 5px
-        z-index: -1
 
 .button_large
     font-size: rem(24px)
@@ -37,3 +35,12 @@
         width: rem(42px)
         right: rem(-19px)
         top: rem(10px)
+
+.button_red
+    background: $red
+    padding: 16px 38px
+
+    &::after
+        content: ''
+        background: $red
+        transform: scaleX(0.6) rotate(45deg)

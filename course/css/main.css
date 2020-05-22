@@ -79,14 +79,13 @@ figure {
   content: '';
   display: block;
   position: absolute;
-  -webkit-transform: scaleX(0.6) rotate(45deg);
-  transform: scaleX(0.5) rotate(45deg);
+  -webkit-transform: scaleX(0.5) rotate(45deg);
+          transform: scaleX(0.5) rotate(45deg);
   height: 2rem;
   width: 2rem;
   right: -0.85714rem;
   top: 0.42857rem;
   border-radius: 5px;
-  z-index: -1;
 }
 
 .button_large {
@@ -102,12 +101,24 @@ figure {
   top: 0.71429rem;
 }
 
+.button_red {
+  background: #FF5900;
+  padding: 16px 38px;
+}
+
+.button_red::after {
+  content: '';
+  background: #FF5900;
+  -webkit-transform: scaleX(0.6) rotate(45deg);
+          transform: scaleX(0.6) rotate(45deg);
+}
+
 /* Секция приветствия */
 #welcome-section {
   position: relative;
   overflow: hidden;
   min-height: 51.42857rem;
-  background: url(/course/img/welcome/gradient.png);
+  background-image: url("/course/img/welcome/gradient.png");
   z-index: 0;
 }
 
@@ -134,7 +145,7 @@ figure {
 }
 
 .welcome-background {
-  background-image: url(/course/img/welcome/welcome-background.png);
+  background-image: url("/course/img/welcome/welcome-background.png");
   height: 51.5rem;
   width: 100%;
   position: absolute;
@@ -151,11 +162,11 @@ figure {
 }
 
 #solution-section .blue-label__text {
-  top: 22px;
+  top: 1.57143rem;
 }
 
 .situation-block .blue-label__text {
-  left: -95px;
+  left: -6.78571rem;
 }
 
 .situation-block,
@@ -172,62 +183,103 @@ figure {
 }
 
 .solution-example__caption {
-  font-size: 18px;
-  line-height: 28px;
-  padding-top: 63px;
-  padding-bottom: 89px;
-  padding-right: 56px;
+  font-size: 1.28571rem;
+  line-height: 2rem;
+  padding-top: 4.5rem;
+  padding-bottom: 6.35714rem;
+  padding-right: 4rem;
 }
 
 .solution-list {
-  margin-top: 95px;
+  margin-top: 6.78571rem;
 }
 
 .solution-list__title {
-  font-size: 16px;
+  font-size: 1.14286rem;
   font-weight: bold;
 }
 
 .solution-list__num {
-  background-image: url(/course/img/solution/krug.svg);
+  background-image: url("/course/img/solution/krug.svg");
   background-repeat: no-repeat;
   background-position: 10px 14px;
   position: relative;
-  min-height: 140px;
-  margin-bottom: 60px;
+  min-height: 10rem;
+  margin-bottom: 4.28571rem;
 }
 
 .solution-list__char {
   font-weight: bold;
-  font-size: 144px;
+  font-size: 10.28571rem;
   position: absolute;
-  top: -15px;
-  left: 64px;
+  top: -1.07143rem;
+  left: 4.57143rem;
 }
 
 .solution-list__symbol {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.28571rem;
   color: #fff;
   background-color: #000;
   border-radius: 50%;
-  padding: 6px 8px;
+  padding: 0.42857rem 0.57143rem;
   text-align: center;
   position: absolute;
-  top: 34px;
-  left: 10px;
+  top: 2.42857rem;
+  left: 0.71429rem;
 }
 
 .solution-list__desc {
-  font-size: 14px;
-  line-height: 20px;
-  padding-top: 5px;
+  font-size: 1rem;
+  line-height: 1.42857rem;
+  padding-top: 0.35714rem;
 }
 
 /* Что вы получите */
 #do-you-get-section {
   min-height: 51.42857rem;
   background-color: #7224ea;
+  overflow: hidden;
+}
+
+#do-you-get-section .container {
+  position: relative;
+}
+
+.do-you-get-background {
+  width: 781px;
+  height: 720px;
+  position: absolute;
+  background-image: url("/course/img/doyouget/phone.png");
+  top: 0;
+  right: -204px;
+}
+
+.advantage {
+  background: #fff;
+  height: 120px;
+  margin-top: 6px;
+  margin-bottom: 42px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 25px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantage_icon {
+  color: #651FFF;
+  font-size: 38px;
+  padding: 5px 8px;
+  margin-right: 26px;
+}
+
+.do-you-get-document {
+  margin-top: 20px;
 }
 
 /* Почему так сложно */
@@ -359,7 +411,7 @@ figure {
 
 .blue-label__text::before, .blue-label__text::after {
   content: "";
-  background-image: url(/course/img/misc/label.svg);
+  background-image: url("/course/img/misc/label.svg");
   width: 5px;
   height: 40px;
   display: block;
