@@ -1,36 +1,37 @@
 /* Что вы получите */
 #do-you-get-section
     min-height: rem(720px)
-    background-color: #7224ea
+    background-color: $purple
     overflow: hidden;
 
     .container
         position: relative
 
 .do-you-get-background
-    width: 781px
-    height: 720px
+    width: rem(781px)
+    height: rem(720px)
     position: absolute
     @include image("/doyouget/phone.png")
     top: 0
-    right: -204px
+    right: rem(-204px)
 
 .advantage
     background: $white
-    height: 120px
-    margin-top: 6px
-    margin-bottom: 42px
-    font-size: 16px
-    line-height: 20px
-    padding: 25px 30px
+    height: rem(120px)
+    margin-top: rem(6px)
+    margin-bottom: rem(42px)
+    font-size: rem(16px)
+    line-height: rem(20px)
+    padding: rem(25px) rem(30px)
     display: flex
     align-items: center
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.08), 0px 6px 12px rgba(0, 0, 0, 0.14)
 
 .advantage_icon
-    color: #651FFF
-    font-size: 38px
-    padding: 5px 8px
-    margin-right: 26px
+    color: $blue
+    font-size: rem(38px)
+    padding: rem(5px) rem(8px)
+    margin-right: rem(26px)
 
 .do-you-get-document
-    margin-top: 20px
+    margin-top: rem(20px)

@@ -29,8 +29,8 @@ figure {
 
 @font-face {
   font-family: 'icons';
-  src: url("/course/font/icons.eot?90484239");
-  src: url("/course/font/icons.eot?90484239#iefix") format("embedded-opentype"), url("/course/font/icons.woff?90484239") format("woff"), url("/course/font/icons.ttf?90484239") format("truetype"), url("/course/font/icons.svg?90484239#icons") format("svg");
+  src: url("../font/icons.eot?90484239");
+  src: url("../font/icons.eot?90484239#iefix") format("embedded-opentype"), url("../font/icons.woff?90484239") format("woff"), url("../font/icons.ttf?90484239") format("truetype"), url("../font/icons.svg?90484239#icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -118,7 +118,7 @@ figure {
   position: relative;
   overflow: hidden;
   min-height: 51.42857rem;
-  background-image: url("/course/img/welcome/gradient.png");
+  background-image: url("../img/welcome/gradient.png");
   z-index: 0;
 }
 
@@ -145,7 +145,7 @@ figure {
 }
 
 .welcome-background {
-  background-image: url("/course/img/welcome/welcome-background.png");
+  background-image: url("../img/welcome/welcome-background.png");
   height: 51.5rem;
   width: 100%;
   position: absolute;
@@ -200,7 +200,7 @@ figure {
 }
 
 .solution-list__num {
-  background-image: url("/course/img/solution/krug.svg");
+  background-image: url("../img/solution/krug.svg");
   background-repeat: no-repeat;
   background-position: 10px 14px;
   position: relative;
@@ -247,39 +247,41 @@ figure {
 }
 
 .do-you-get-background {
-  width: 781px;
-  height: 720px;
+  width: 55.78571rem;
+  height: 51.42857rem;
   position: absolute;
-  background-image: url("/course/img/doyouget/phone.png");
+  background-image: url("../img/doyouget/phone.png");
   top: 0;
-  right: -204px;
+  right: -14.57143rem;
 }
 
 .advantage {
   background: #fff;
-  height: 120px;
-  margin-top: 6px;
-  margin-bottom: 42px;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 25px 30px;
+  height: 8.57143rem;
+  margin-top: 0.42857rem;
+  margin-bottom: 3rem;
+  font-size: 1.14286rem;
+  line-height: 1.42857rem;
+  padding: 1.78571rem 2.14286rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.08), 0px 6px 12px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.08), 0px 6px 12px rgba(0, 0, 0, 0.14);
 }
 
 .advantage_icon {
-  color: #651FFF;
-  font-size: 38px;
-  padding: 5px 8px;
-  margin-right: 26px;
+  color: #661fff;
+  font-size: 2.71429rem;
+  padding: 0.35714rem 0.57143rem;
+  margin-right: 1.85714rem;
 }
 
 .do-you-get-document {
-  margin-top: 20px;
+  margin-top: 1.42857rem;
 }
 
 /* Почему так сложно */
@@ -317,7 +319,7 @@ figure {
 /* Форма */
 #form-section {
   min-height: 51.42857rem;
-  background-color: #f5f5f3;
+  background-color: #f5f5f5;
 }
 
 /* Подвал */
@@ -411,7 +413,7 @@ figure {
 
 .blue-label__text::before, .blue-label__text::after {
   content: "";
-  background-image: url("/course/img/misc/label.svg");
+  background-image: url("../img/misc/label.svg");
   width: 5px;
   height: 40px;
   display: block;
