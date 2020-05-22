@@ -1,4 +1,31 @@
 /* Как начать */
 #how-start-section
+    counter-reset: steps;
     min-height: rem(300px)
     background-color: $blue
+
+.how-start-list
+    padding-top: 7px;
+
+.how-start-list__item
+
+.how-start-list__desc
+    color: $white
+    font-size: 16px
+    line-height: 19px
+    margin: 0;
+    padding: 20px 10px 20px 82px;
+    position: relative
+
+    &::before
+        position: absolute
+        counter-increment: steps;
+        content: counter(steps)
+        top: 6px
+        left: 4px
+        display: block
+        width: 62px
+        height: 62px
+        color: $white
+        padding: 22px 26px
+        @include image("/process/point.svg")

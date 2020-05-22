@@ -466,8 +466,36 @@ figure {
 
 /* Как начать */
 #how-start-section {
+  counter-reset: steps;
   min-height: 21.42857rem;
   background-color: #661fff;
+}
+
+.how-start-list {
+  padding-top: 7px;
+}
+
+.how-start-list__desc {
+  color: #fff;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  padding: 20px 10px 20px 82px;
+  position: relative;
+}
+
+.how-start-list__desc::before {
+  position: absolute;
+  counter-increment: steps;
+  content: counter(steps);
+  top: 6px;
+  left: 4px;
+  display: block;
+  width: 62px;
+  height: 62px;
+  color: #fff;
+  padding: 22px 26px;
+  background-image: url("../img/process/point.svg");
 }
 
 /* Форма */
