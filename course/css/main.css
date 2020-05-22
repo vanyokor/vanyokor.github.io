@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.button, .welcome-text__subtitle, .logo__link, .menu__link {
+.button, .welcome-text__subtitle, .solution-list__char, .logo__link, .menu__link {
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -16,6 +16,15 @@ html, body {
 
 img {
   max-width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+.test {
+  background: red;
+  height: 300px;
 }
 
 @font-face {
@@ -103,7 +112,7 @@ img {
 }
 
 #welcome-text {
-  margin-top: 6.14286rem;
+  margin-top: 5.57143rem;
 }
 
 .welcome-text__label {
@@ -115,7 +124,7 @@ img {
   padding-left: 11.64286rem;
   margin: 0;
   position: relative;
-  top: 0.57143rem;
+  top: 1.07143rem;
 }
 
 .welcome-text__subtitle {
@@ -139,6 +148,80 @@ img {
 /* Решение ситуации */
 #solution-section {
   min-height: 46.21429rem;
+}
+
+#solution-section .blue-label__text {
+  top: 22px;
+}
+
+.situation-block .blue-label__text {
+  left: -95px;
+}
+
+.situation-block,
+.solution-block {
+  margin-top: 7.14286rem;
+}
+
+.solution-example {
+  border-right: 1px solid #000;
+}
+
+.solution-example__image {
+  width: 100%;
+}
+
+.solution-example__caption {
+  font-size: 18px;
+  line-height: 28px;
+  padding-top: 63px;
+  padding-bottom: 89px;
+  padding-right: 56px;
+}
+
+.solution-list {
+  margin-top: 95px;
+}
+
+.solution-list__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.solution-list__num {
+  background-image: url(/course/img/solution/krug.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 14px;
+  position: relative;
+  min-height: 140px;
+  margin-bottom: 60px;
+}
+
+.solution-list__char {
+  font-weight: bold;
+  font-size: 144px;
+  position: absolute;
+  top: -15px;
+  left: 64px;
+}
+
+.solution-list__symbol {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+  padding: 6px 8px;
+  text-align: center;
+  position: absolute;
+  top: 34px;
+  left: 10px;
+}
+
+.solution-list__desc {
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 5px;
 }
 
 /* Что вы получите */
@@ -256,5 +339,54 @@ img {
   line-height: 1.14286rem;
   margin: 0.57143rem 0 0 2.35714rem;
   display: inline-block;
+}
+
+.blue-label {
+  margin: 0;
+  position: relative;
+}
+
+.blue-label__text {
+  position: absolute;
+  color: #fff;
+  font-size: 18px;
+  background-color: #661fff;
+  margin: 0;
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 23px;
+}
+
+.blue-label__text::before, .blue-label__text::after {
+  content: "";
+  background-image: url(/course/img/misc/label.svg);
+  width: 5px;
+  height: 40px;
+  display: block;
+  position: absolute;
+}
+
+.blue-label__text::before {
+  top: 0;
+  left: -5px;
+}
+
+.blue-label__text::after {
+  top: 0;
+  right: -5px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.section-title {
+  color: #000;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  margin: 5rem 0;
+}
+
+.section-title_inverted {
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
