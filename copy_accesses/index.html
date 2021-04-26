@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Букмарклет: Копир доступов</title>
+	<meta name="robots" content="noindex, nofollow" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<noindex>
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="card">
+<div class="card-header"><span class="h4 card-title">Копир доступов</span></div>
+<div class="card-body">
+
+<p>Установка: отобразить панель закладок (ctrl+shift+b), если скрыта. Перетащить ссылку ниже на панель закладок.</p>
+
+<p><a href="javascript:(function(){if(/https:\/\/gkit.ru\/tm\/task\//.test(window.location.href)){if($(%22#task_detail_table%22).length>0){if(navigator.clipboard){if(typeof%20window.copy_access===%22undefined%22){window.copy_access=function(){if($(%22.modal-title%22).length>0){var%20i=[%22Доступ%20к%20FTP%22,%22Доступ%20к%20админ.%20панели%20сайта%22,%22Доступ%20к%20хостингу%22];if(i.indexOf($(%22h4.modal-title%22).text())!==-1){if($(%22.copy_access%22).length==0){var%20t=$(%22.modal-content%20.form-group%20.form-control-static:lt(5)%22);t.css({%22cursor%22:%22pointer%22,%22text-decoration%22:%22underline%22});t.addClass(%22copy_access%22);t.click(function(t){navigator.clipboard.writeText($(this).text());swal({title:%22Скопировано%22,timer:500})})}}}};$(document).on(%22click%22,%22.popover%20.btn-toolbar%20.btn:lt(3)%22,function(t){setTimeout(function(){copy_access()},800)});copy_access()};if($(%22.copy-sitename%22).length==0){$(%22#task_detail_table%20a[href^='/kit/\\#sites/']%22).each(function(){var%20i=$(this).text(),e=/[^\s]+/,t=e.exec(i),t=t[0],o=$(this),c=%22<span%20onclick='navigator.clipboard.writeText(\%22%22+t+%22\%22)'%20class='copy-sitename%20glyphicon%20glyphicon-copy'></span>%20%22;o.before(c)})}}}}})()">[js] Копир доступов</a>
+</p>
+
+<p>Скрипт запускается кликом по закладке, находясь на необходимой странице.</p>
+<p>Работа скрипта завершится браузером, если обновить страницу или перейти в текущей вкладке на другую. В случае необходимости запускайте скрипт заново.</p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</noindex>
+</body>
+</html>
